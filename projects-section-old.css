@@ -1,0 +1,241 @@
+/**/
+
+/*PROJECTS*/
+.projects-wrap {
+  display: inline-flex; /*inline*/
+  width: 100%;
+  /*background-color: red; REMOVE*/
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  will-change: transform;
+  position: relative;
+  /**/
+  /**/
+  /*https://css-tricks.com/introducing-css-scroll-snap-points/*/
+  -webkit-overflow-scrolling: touch;
+  -webkit-scroll-snap-type: mandatory;
+  -ms-scroll-snap-type: mandatory;
+  scroll-snap-type: mandatory;
+  /* older spec implementation */
+  -webkit-scroll-snap-destination: 0% 100%;
+  -ms-scroll-snap-destination: 0% 100%;
+  scroll-snap-destination: 0% 100%;
+  -webkit-scroll-snap-points-x: repeat(100%);
+  -ms-scroll-snap-points-x: repeat(100%);
+  scroll-snap-points-x: repeat(100%);
+  /**/
+  /**/
+}
+.project-wrap {
+  scroll-snap-align: start;
+  /**/
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  min-width: 80%;
+  margin: 40px 10%;
+  background: white;
+  padding: 40px;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+.projects-title {
+  color: #0f0fb0;
+  opacity: 0.85;
+  font-size: 24px;
+  z-index: 3;
+}
+.item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item0 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item0,last-item {
+  font-family: sans-serif;
+  height: 400px; /*800*/
+  /*padding: 100px;
+  margin: 50px 0px 50px 0px;*/
+  width: 100%;
+  /*border: 1px solid #575757;*/
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  background: rgba(0,0,0,0,.01);
+   /*
+  -webkit-box-shadow: inset 0 0 25px rgba(0,0,0,0.1);
+          box-shadow: inset 0 0 25px rgba(0,0,0,0.1);*/
+  /**/
+  transition: all 3s;
+}
+.item {
+  scroll-snap-align: start;
+  /**/
+  font-family: sans-serif;
+  height: 400px; /*800*/
+  min-width: 50%;
+  /*border: 1px solid #575757;*/
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: rgba(0, 0, 0, 0.01);
+  -webkit-box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.1);
+  /**/
+  transition: all 3s;
+}
+
+.item0 {background-color: #fff;}
+.item:nth-child(1) {
+  background-image: url("Google Cards.png");
+  background-size: 550px;
+}
+.item:nth-child(2) {
+  background-color: #fff;
+}
+.item:nth-child(3) {
+  background-image: url("FjallRaven eCommerce.png");
+  background-size: 550px;
+}
+.item:nth-child(4) {
+  background-color: #fff;
+}
+.item:nth-child(5) {
+  background-image: url("Faiccos Restaurant Website.png");
+  background-size: 550px;
+}
+.item:nth-child(6) {
+  background-color: #fff;
+}
+.item:nth-child(7) {
+  background-image: url("Gronland 1 copy.png");
+  background-size: 550px;
+}
+.item:nth-child(8) {
+  background-color: #fff;
+}
+.item:nth-child(9) {
+  background-image: url("Random Quote Generator.png");
+  background-size: 550px;
+}
+.item:nth-child(10) {
+  background-color: #fff;
+}
+.item:nth-child(11) {
+  background-image: url("To Do List - using Local Storage.png");
+  background-size: 550px;
+}
+.item:nth-child(12) {
+  background-color: #fff;
+}
+.item:nth-child(13) {
+  background-image: url("VoiceRecApp.png");
+  background-size: 550px;
+}
+.item:nth-child(14) {
+  background-color: #fff;
+}
+.item:nth-child(15) {
+  background-image: url("Wikpedia Viewer1.png");
+  background-size: 550px;
+}
+.item:nth-child(16) {
+  background-color: #fff;
+}
+.last-item { background-color: #fff;}
+.item:nth-child(2), .last-item {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  padding: 0 50px 0 50px;
+}
+.return-arrow2 {
+  align-self: flex-end; 
+  font-size: 45px;
+  cursor: pointer;
+  margin: 40px 0px 0px 0px;
+  opacity: 0.55;
+}
+.return-arrow2:hover{
+  opacity: .90;
+  tranform: scale(1.1);
+}
+span {
+  white-space: normal;
+  color: #0f0fb0;
+  min-width: 250px;
+  z-index: 3;
+  text-align: center;
+}
+.p1 {
+  white-space: normal;
+  font-size: 14.5px;
+  color: #575757;
+  line-height: 1.1;
+  padding-top: 10px;
+  margin: 40px;
+}
+.proj-icon {
+  color: black;
+  cursor: pointer;
+  color: #575757;
+  font-size: 30px;
+}
+.proj-icon:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  color: black;
+}
+.p2 {
+  white-space: normal;
+  font-size: 18px;
+  color: #575757;
+}
+.proj-icon2 {
+  color: black;
+  cursor: pointer;
+  color: #575757;
+  font-size: 70px;
+}
+.proj-icon2:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  color: black;
+}
+
+@media (max-width: 750px) {
+  .p1 {
+    font-size: 13px;
+  }
+  .items {
+    padding: 125px 0px 100px 0px;
+  }
+  #projects.site-wrap {
+    padding: 40px 0px 40px 0px;
+  }
+}
+/**/
+
+
+/**/
