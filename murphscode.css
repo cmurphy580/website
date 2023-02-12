@@ -23,6 +23,7 @@ html {
   font-family: 'helvetica neue';
   font-size: 16px;
   font-weight: 200;
+  width: 100% !important;
 }
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -491,7 +492,8 @@ h6:hover {
   float: right;
   font-size: 35px;
   cursor: pointer;
-  opacity: 0.55;
+  /*opacity: 0.55;*/
+  opacity: 1;
 }
 .arrow-right:hover{
   opacity: .90;
@@ -532,7 +534,7 @@ h5 {
   display: inline-block;
   font-weight: 300;
   line-height: 1.2;
-  margin: 35px 0px 0px 80px;
+  /*margin: 35px 0px 0px 80px;*/
   padding-bottom: 30px;
 }
 .return-arrow {
