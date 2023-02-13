@@ -747,7 +747,8 @@ span {
   position: relative;
   top: -120px;
   left: 80px;
-  color: #0F0FB0;
+  /*color: #0F0FB0;*/
+  color: black;
   min-width: 250px;
 }
 .p1 {
